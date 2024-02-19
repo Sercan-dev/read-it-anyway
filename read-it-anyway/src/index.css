@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Define a custom shadow for the blueish neon glow */
+  .shadow-blue-glow {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.6); /* Blue glow */
+  }
+}
+
+
+/* Tailwind utility classes might not directly apply here, so use plain CSS */
+.popup-container {
+  width: 400px; /* Desired width */
+  height: 400px; /* Desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb; /* Example background color */
+}
+
+/* Ensure the button fits well within your container */
+.archive-button {
+  width: 150px; /* Adjust based on your design preference */
+  height: 150px; /* Adjust based on your design preference */
+  border-radius: 9999px; /* Fully rounded edges */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ffffff; /* Button background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow for button */
+}
+
+/* Additional styling for the image within the button, if necessary */
+.archive-button img {
+  width: 100%; /* Ensure image covers the button area */
+  height: 100%; /* Ensure image covers the button area */
+  border-radius: 9999px; /* Ensure image is fully rounded to match the button */
+}
